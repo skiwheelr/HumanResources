@@ -1,5 +1,5 @@
 
-package humanresourcespr8;
+
 
 public class Staff extends Employee {
     //private String title;
@@ -13,7 +13,7 @@ public class Staff extends Employee {
     }
 
     public Staff(String name, String title) {
-        super(name);
+        super.setName(name);
         this.title = title;
     }
 

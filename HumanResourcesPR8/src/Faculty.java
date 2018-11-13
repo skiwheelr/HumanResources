@@ -1,15 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package humanresourcespr8;
 
-/**
- *
- * @author Terrapin
- */
-public class Faculty extends Employee {
+
+
+
+ class Faculty extends Employee {
     
    // private String hours;
    // private String rank;
@@ -21,13 +14,9 @@ public class Faculty extends Employee {
 
     protected String officeHours;
     protected String rank;
-
-    public Faculty(String name) {
-        this(name, "9-5PM", "Employee");
-    }
-
-    public Faculty(String name, String officeHours, String rank) {
-        super(name);
+    
+   
+    public Faculty(String name, String officeHours, String rank, int office, int Salary, MyDate dateHired) {
         this.officeHours = officeHours;
         this.rank = rank;
     }
@@ -47,9 +36,9 @@ public class Faculty extends Employee {
     public void setRank(String rank) {
         this.rank = rank;
     }
-    @Override
+  
     public String toString() {
-        return "Name: " + getName() + " Class: " + this.getClass().getName();
+        return "Name: " + getName() + " Class: " + getRank();
     }
     
     

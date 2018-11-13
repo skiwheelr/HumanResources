@@ -1,3 +1,5 @@
+
+
 /*
  * Class: CMSC201 
  * Instructor:
@@ -8,14 +10,14 @@
    I have not given my code to any student.
    Print your Name here: MARK WAGNER
 */
-
-package humanresourcespr8;
+import java.util.Scanner;
 
 public class HumanResourcesPR8 {
- public static void main(String[] args)
-    {
+  public static void main(String[] args)
+  
+ {
    
-        MyDate date = new MyDate(3, 3, 2015);
+ MyDate date = new MyDate("03,03,2015");
        
  Person person = new Person("Johnny", "123 Maple Street", "000-000-0000", "Johnny@yahoo.com"); //super class(name, address, number, email address)
  
@@ -42,19 +44,5 @@ public class HumanResourcesPR8 {
  System.out.println(staff.toString() + "\n");
     }
 }
-    /*
-    public static void main(String[] args) {
-        Person person = new Person("person");
-        Student student = new Student("student");
-        Employee employee = new Employee("employee");
-        Faculty faculty = new Faculty("faculty");
-        Staff staff = new Staff("staff");
-
-        System.out.println(person.toString());
-        System.out.println(student.toString());
-        System.out.println(employee.toString());
-        System.out.println(faculty.toString());
-        System.out.println(staff.toString());
-    }
-    */
-}
+    
+ 

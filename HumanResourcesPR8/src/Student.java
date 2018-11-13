@@ -1,11 +1,7 @@
 
-package humanresourcespr8;
+
 import java.util.Scanner;
 
-/**
- *
- * @author Terrapin
- */
 public class Student extends Person{
     
    
@@ -16,19 +12,24 @@ public class Student extends Person{
 
     protected String status;
 
-    public Student(String name) {
-        super(name);
-    }
+    public Student(String name, String address,  
+		String phone, String email, String status) {
+		super(name, address, phone, email);
+		this.status = status;
+	}
 
     public Student(String name, String status) {
-        super(name);
+        super.setName(name);
         this.status = status;
     }
-    @Override
+
+    public String getStatus() {
+		return status;
+	}
+    
     public String toString() {
-        return "Name: " + getName() + " Class: " + this.getClass().getName();
-    }
+		return super.toString() + "\nStatus: " + getStatus();
+	}
 }
     
     
-
